@@ -1,0 +1,280 @@
+/* Common Items */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #181719;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: calc(100% - 77px);
+    margin: 0 auto;
+}
+#hamburguer {
+    font-size: 40px;
+}
+/* Header Area */
+
+.header-master {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-master .logo {
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 5px;
+    width: 102px;
+    height: 32px;
+}
+.header-master .menu-mobile {
+    display: none;
+}
+.header-master .menu nav ul {
+    display: flex;
+    list-style: none;
+}
+.header-master .menu nav ul a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-right: 86px;
+    border-bottom: 2px solid #181719;
+    padding-bottom: 5px;
+}
+.header-master .menu nav ul a:nth-child(4) {
+    margin-right: 0;
+}
+.header-master .menu nav ul a:hover {
+    border-bottom:2px solid #fff;
+    /*font-weight: 700;*/
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #181719;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #181719;
+}
+.sidebar a:nth-child(2) {
+    margin-top: 100px;
+}
+  
+.sidebar a:hover {
+    border-bottom: 2px solid #f1f1f1;
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+/* Main Area */
+main {
+    margin-bottom: 200px;
+}
+.main-master {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-master .info h1 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+    margin-bottom: 40px;
+}
+.main-master .info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 50px;
+}
+.main-master .info a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+.main-master .info a:hover {
+    text-decoration: underline;
+}
+
+.main-master .banner .picture {
+    width: 737px;
+    height: 555px;
+}
+.main-master .banner .picture img {
+    width: 100%;
+}
+.main-master .banner .user-card {
+    position: absolute;
+    width: 410px;
+    height: 189px;
+    left: 770px;
+    top: 713px;
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+}
+.main-master .banner .user-card h4 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+.main-master .banner .user-card .user-card--header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.main-master .banner .user-card .user-card--header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 37px;
+    margin-right: 20px;
+}
+.main-master .banner .user-card .user-card--header .user-card--title .user-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 8px;
+}
+.main-master .banner .user-card .user-card--header .user-card--title .user-job {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+
+/* Footer Area */
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+    margin-bottom: 25px;
+}
+footer p a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #A9A9A9;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive CSS */
+/* Tablet */
+@media screen and (max-width:821px) {
+    .container {
+        width: calc(100% - 30px);
+    }
+    .header-master .menu nav ul a {
+        margin-right: 40px;
+    }
+    .main-master {
+        flex-direction: column;
+    }
+    .main-master .info {
+        margin-bottom: 25px;
+        align-self: flex-start;
+    }
+    .main-master .banner .picture {
+        width: unset;
+        height: unset;
+    }
+    .main-master .banner .user-card {
+        left: 135px;
+        top: 1094px;
+    }
+}
+/* Mobile */
+@media screen and (max-width:430px) {
+    .header-master {
+        margin-top: 15px;
+    }
+    .header-master .menu {
+        display: none;
+    }
+    .header-master .menu-mobile {
+        display: inline-block;
+    }
+    main {
+        margin-top: -120px;
+    }
+    .main-master .info h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .main-master .info p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .main-master .info a {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .main-master .banner .user-card {
+        width: 300px;
+        height: 138px;
+        left: 43px;
+        top: 565px;
+        padding: 8px 25px;
+    }
+    .main-master .banner .user-card .user-card--header .user-card--title .user-name {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .main-master .banner .user-card .user-card--header .user-card--title .user-job {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .main-master .banner .user-card h4 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
